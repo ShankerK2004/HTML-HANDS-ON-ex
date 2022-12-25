@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGraphy Web</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3249/3249934.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,.main {
+            width: 100%;
+            height: 100vh;
+            font-family: poppins, sans-serif;
+            background-color: black;
+        }
+        .camimage {
+            width: 70%;
+            height: auto;
+            float: left;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        #backGroundImage {
+            width: 100%;
+            height: 100vh;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        h1 { background-image: linear-gradient(121deg, rgb(118 75 162) 63%, rgb(102 126 234) 57.2%);}
+        h2 {background-image: linear-gradient(120deg, rgb(118 75 162) 51%, rgb(102 126 234) 51%);}
+        h1,h2 {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .leftSide {
+            width: 30%;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            float: left;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            background-image: linear-gradient(120deg, rgba(102, 126, 234) 50%, rgb(118, 75, 162) 48%);
+        }
+        .leftSide:hover {
+            background-image: url("https://wallpaperaccess.com/full/134980.jpg");
+            background-size: cover;
+        }
+        button {
+            border: 0.5px solid white;
+            width: 18vh;
+            height: 6vh;
+            border-radius: 200px;
+            background-image: linear-gradient(120deg, #667eea 26.5%, #764ba2 26.5%);
+            margin-top: 10%;
+        }
+        a button {
+            font-size: large;
+            font-weight: 600;
+            color: white;
+        }
+        button:hover {
+            box-shadow: 0px 0px 12px 4px rgba(255, 255, 255, 0.6),
+                inset 0px 0px 12px 4px rgba(255, 255, 255, 0.6);
+        }
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+        }
+        .head {
+            width: 100%;
+            height: 6vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #ourWork {
+            width: 12%;
+            text-align: center;
+            border-left: 2px dotted white;
+            border-right: 2px dotted white;
+        }
+        #firstImage,#secondImage,#thirdImage,#fourthImage {
+            width: 100%;
+            height: 100%;
+        }
+        #firstImageName,#secondImageName,#thirdImageName {
+            width: 100%;
+            height: 6vh;
+            font-size: 120%;
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        .myWork {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="leftSide">
+            <div>
+                <h1 id="titleName">SH PhotoGraphy</h1>
+            </div>
+            <div>
+                <h2 id="titleDescription">See The World In A Way You Have Never Seen ...</h2>
+            </div>
+            <div>
+                <a href="#" id="viewWork"><button onclick="document.querySelector('.myWork').style.display='block';"> View Work</button></a>
+            </div>
+        </div>
+        <div class="camimage">
+            <img src="https://cameralandsandton.co.za/wp-content/uploads/2015/10/pexels-photo-1.jpg" alt="camera lens"
+                id="backGroundImage">
+        </div>
+    </div>
+    <div class="myWork">
+        <div class="head">
+            <h2 id="ourWork">My Works</h2>
+        </div>
+        <div>
+            <b>
+                <p id="firstImageName">Food PhotoGraphy</p>
+            </b>
+        </div>
+        <div class="image">
+            <img src="https://www.rd.com/wp-content/uploads/2018/11/Coca-cola-on-ice.jpg" alt="coca cola"
+                id="firstImage">
+        </div>
+        <div class="image">
+            <img src="https://sortedmedia.com.au/wp-content/uploads/2020/06/DSC0903-scaled.jpg" alt="pancake image"
+                id="secondImage">
+        </div>
+        <div>
+            <b>
+                <p id="secondImageName">Aerial PhotoGraphy</p>
+            </b>
+        </div>
+        <div class="image">
+            <img src="https://www.iliketowastemytime.com/sites/default/files/aerial-photography-jason-hawkes1.jpg"
+                alt="aerial pic " id="thirdImage">
+        </div>
+        <div>
+            <b>
+                <p id="thirdImageName">Abstract PhotoGraphy</p>
+            </b>
+        </div>
+        <div class="image">
+            <img src="https://wallpaperaccess.com/full/2748628.jpg" alt="light in a jar" id="fourthImage">
+        </div>
+    </div>
+</body>
+</html>
