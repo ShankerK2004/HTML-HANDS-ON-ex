@@ -1,0 +1,122 @@
+<!--
+    This Page is one of Link Web pages mini - project
+    created by Shanker ...
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1000/1000946.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 120%;
+  background-image: url("https://source.unsplash.com/1980x1080/?landscape");
+}
+
+.main {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  transform: translateY(10%);
+}
+
+div {
+  padding: 2% 0% 2% 0%;
+}
+
+button {
+  width: 16%;
+  height: 4vh;
+  border: none;
+  border-radius: 20px;
+  font-weight: 900;
+  box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+button:hover, button:focus {
+  outline: none;
+  -webkit-animation: ripple 1s infinite;
+          animation: ripple 1s infinite;
+}
+
+@-webkit-keyframes ripple {
+  25% {
+    box-shadow: 0px 0px 12px 6px aqua;
+  }
+}
+
+@keyframes ripple {
+  25% {
+    box-shadow: 0px 0px 12px 6px aqua;
+  }
+}
+input {
+  width: 26%;
+  height: 4vh;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <form id="login-form">
+            <div>
+                <label class="reg">Registration</label>
+            </div>
+            <div>
+                <label for="">Name : </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Password : </label>
+                <input type="password">
+            </div>
+            <div>
+                <label for="">Email : </label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="">Courses : </label>
+                <select id="course">
+                    <option value="">CSE</option>
+                    <option value="">Aerospace Eng</option>
+                    <option value="">IT</option>
+                    <option value="">EEE</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Address : </label>
+                <textarea rows="5" cols="20"></textarea>
+            </div>
+            <div>
+                <label for="">Country : </label>
+                <select>
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">London</option>
+                    <option value="">Berlin</option>
+                </select>
+            </div>
+            <datalist id="countries"></datalist>
+            <div>
+                <button type="submit"> SUBMIT </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
