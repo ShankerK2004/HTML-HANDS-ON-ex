@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEGETABLE SALAD</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2413/2413394.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            font-family: poppins,sans-serif;
+            font-weight: 700;
+        }
+        .main {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        }
+        #titleName,#steps,#benefits {
+            color: green;
+            text-decoration: underline;
+        }
+        #vegetableSaladImage {
+            width: 40%;
+            height: 40vh;
+            border-radius: 20px;
+            border: 2px solid white;
+            padding: 10px;
+            box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.4);
+            margin: 1%;
+        }
+        #benefitsParagraph {
+            width: 60%;
+            margin: auto;
+        }
+        #stepForVegetableSalad ul {
+            width: 50%;
+            margin: auto;
+        }
+        li {
+            padding:2px 0;
+        }
+        hr {
+            width: 90%;
+            margin: auto;
+            border-color: black;
+        }
+        footer {
+            padding: 1% 0%;
+        }
+        ::-webkit-scrollbar{width: 0px;}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id="titleName">VEGETABLE SALAD</h1>
+        <img src="https://4.bp.blogspot.com/-o182A3h1lEw/UiZdSIKSALI/AAAAAAAAKXE/wY7t3BD_HrE/s1600/Garnbanzo+salad+016.JPG" alt="salad" id="vegetableSaladImage">
+        <h1 id="benefits">Benefits of vegetable Salad</h1>
+        <p id="benefitsParagraph">Aside from their natural good taste and great crunchy texture alongside wonderful colors  and fragrances, eating a large serving of fresh, raw vegetables each day can have significant health benefits.</p>
+        <div id="steps">
+            <h1>Steps to make Vegetable Salad</h1>
+        </div>
+        <div id="stepForVegetableSalad">
+            <ul>
+                <li>Take a large and clear glass bowl</li>
+                <li>Try adding blanched, lightly steamed or roasted veggies like broccoli, french beans, corn,
+                    cauliflower, baby corn.</li>
+                <li>Add lentils, beans or chickpeas or bean sprouts for more protein</li>
+                <li>Grate some of the vegetables for a different texture.</li>
+                <li>Add marinated veggies like artichoke hearts for tang, or other veggies like radish for some
+                    pungency.</li>
+                <li>Swap in your own favorite combination of dried fruits, nuts and seeds.
+                    Use fresh coriander or chives instead of parsley.</li>
+            </ul>
+        </div>
+        <hr>
+        <footer id="footerText">
+            <p>This easy vegetable salad is packed with a variety of summer produce with all the textures and colors one
+                could ever want.</p>
+        </footer>
+    </div>
+</body>
+</html>
