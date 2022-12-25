@@ -1,0 +1,145 @@
+<!--
+    This Page is one of Link Web pages mini - project
+    created by Shanker ...
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9117/9117931.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("https://source.unsplash.com/1980x1080/?landscape");
+}
+
+.main {
+  width: 50%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px 6px black;
+}
+
+h2 {
+  font-variant: small-caps;
+}
+
+h2 img {
+  width: 30%;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: aqua;
+  text-decoration: none;
+}
+
+#heading {
+  padding-top: 4%;
+}
+
+.links {
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links h2 {
+  width: 12%;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  height: 4vh;
+  font-size: 80%;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  padding-left: 20%;
+  margin-bottom: 20%;
+  box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+button:hover {
+  -webkit-animation: ripple 1s infinite;
+  animation: ripple 1s infinite;
+}
+
+button:hover img {
+  -webkit-animation: arrow 1s infinite;
+  animation: arrow 1s infinite;
+}
+
+@-webkit-keyframes ripple {
+  25% {
+    box-shadow: 0px 0px 12px 6px aqua;
+  }
+}
+@keyframes ripple {
+  25% {
+    box-shadow: 0px 0px 12px 6px aqua;
+  }
+}
+@-webkit-keyframes arrow {
+  25% {
+    transform: translateX(20%);
+  }
+}
+@keyframes arrow {
+  25% {
+    transform: translateX(20%);
+  }
+}
+    </style>
+</head>
+<body>
+<div class="main">
+    <h2 id="heading">CHECK OUT MY OTHER WEBPAGES</h2>
+    <div class="links">
+        <h2><div>
+                <a href="registration.html" id="login">
+                    <button>
+                        Login <img src="https://cdn-icons-png.flaticon.com/512/8045/8045318.png" alt="right arrow">
+                    </button>
+                </a></h2>
+        <h2><div>
+                <a href="table.html" id="table">
+                    <button>
+                        Table <img src="https://cdn-icons-png.flaticon.com/512/8045/8045318.png" alt="right arrow">
+                    </button>
+                </a>
+            </div></h2>
+        <h2><div>
+            <div>
+                <a href="about.html" id="about">
+                    <button>
+                        About <img src="https://cdn-icons-png.flaticon.com/512/8045/8045318.png" alt="right arrow">
+                    </button>
+                </a>
+            </div>
+            </div></h2>
+        </div>
+    </div>
+</body>
+</html>
