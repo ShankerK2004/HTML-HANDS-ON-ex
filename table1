@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE3 Pages </title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2961/2961248.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            font-family: poppins, sans-serif;
+            text-align: center;
+            background-image: url("https://source.unsplash.com/1980x1080/?landscape");
+            background-size: 100% 100vh;
+            font-weight: 800;
+            color: white;
+        }
+        .main {
+            width: 50%;
+            height: 80vh;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            transform: translateY(10%);
+        }
+        #imageHeading,.reg,#table-heading,#courseHeading,#frameHeading {
+            text-decoration: underline;
+            text-transform: uppercase;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        table,
+        th,
+        td {
+            padding: 1%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        table {
+            width: 40%;
+            margin: auto;
+        }
+        ul {
+            width: 10%;
+            margin: auto;
+        }
+        li { padding-bottom: 2%; }
+        #courseHeading { padding: 2%; }
+        #submit_btn {
+            width: 16%;
+            height: 4vh;
+            border: none;
+            border-radius: 20px;
+            font-weight: 900;
+            box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.6);
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        }
+        #submit_btn:hover,
+        #submit_btn:focus {
+            outline: none;
+            -webkit-animation: ripple 1s infinite;
+            animation: ripple 1s infinite;
+        }
+        @-webkit-keyframes ripple {
+            25% {box-shadow: 0px 0px 12px 6px aqua;}
+        }
+        @keyframes ripple {
+            25% {box-shadow: 0px 0px 12px 6px aqua;}
+        }
+        /* For the div elements */
+        .one,.sec,.third,.fourth {
+            width: 100%;
+            height: 100vh;
+        }
+        /* end */
+        /* for image mapping */
+        #imagemap {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+        /* for iframe */
+        iframe {
+            width: 50%;
+            height: 40vh;
+            border-radius: 20px;
+        }
+        .fourth{
+            align-items: center;
+            justify-content: center;
+        }
+        hr { border: 2px solid black; }
+        ::-webkit-scrollbar { width: 6px;}
+        ::-webkit-scrollbar-thumb{ background-color: black;border-radius: 20px; }
+        ::-webkit-scrollbar-track{ background-image: linear-gradient(120deg, #84fab0, #8fd3f4); }
+        .third div { padding: 2% 0% 2% 0%; }
+        iframe img { width: 100%; }
+        ::-webkit-scrollbar{ width: 6px;}
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1 id="table-heading">Tables and lists</h1>
+    <table id="courseTable">
+        <tr>
+            <th>Roll no.</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+    </table>
+    <h2 id="courseHeading">No. of Courses Available</h2>
+    <ul id="courseList">
+        <li>Computer Science</li>
+        <li>Electronics</li>
+        <li>Aeronautics</li>
+        <li>Mechanical</li>
+        <li>Artificial Intelligence</li>
+    </ul>
+    </div>
+    <hr>
+    <div class="sec">
+        <h1 id="imageHeading">Image Map</h1>
+    <div class="image">
+        <img src="https://pbs.twimg.com/profile_images/673948594529898497/4WEPkR70.jpg" alt="The Intern Movie" usemap="#intern">
+    </div>
+    <map name="intern">
+        <area shape="rect" coords="6,82,507,423" href="https://www.imdb.com/title/tt2361509/" alt="The intern Movie">
+    </map>
+    <h1>Click on Suitcase to get to the website</h1>
+    </div>
+    <hr>
+    <div class="third">
+        <div class="main">
+            <form id="login-form" aria-required="true">
+                <div>
+                    <label class="reg">Registration</label>
+                </div>
+                <div>
+                    <label>Name : </label>
+                    <input type="text" id="fname">
+                </div>
+                <div>
+                    <label>Password : </label>
+                    <input type="password">
+                </div>
+                <div>
+                    <label>Email : </label>
+                    <input type="email">
+                </div>
+                <div>
+                    <label>Courses : </label>
+                    <select id="course">
+                        <option>IT</option>
+                        <option>CSE</option>
+                        <option>Aerospace Eng</option>
+                        <option>EEE</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Address : </label>
+                    <textarea rows="5" cols="20"></textarea>
+                </div>
+                <div>
+                    <label>Country : </label>
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>London</option>
+                        <option>Berlin</option>
+                    </select>
+                </div>
+                <datalist id="countries"></datalist>
+                <div>
+                    <button type="submit" id="submit_btn"> SUBMIT </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="fourth">
+        <h1 id="frameHeading">Iframe in HTML</h1>
+        <iframe src="https://www.pcclean.io/wp-content/uploads/2020/4/2AnyMz.jpg" frameborder="0"
+            id="frameImage1"></iframe>
+        <iframe src="https://www.pcclean.io/wp-content/uploads/2020/4/2AnyMz.jpg" frameborder="0"
+            id="frameImage2"></iframe>
+    </div>
+</body>
+</html>
