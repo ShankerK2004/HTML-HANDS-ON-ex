@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAV FOOD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2413/2413371.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+}
+
+.body, .food, .food1, .food2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body img {
+  width: 100%;
+  height: 100vh;
+}
+
+#titleName {
+  width: 50%;
+  border-radius: 20px;
+  position: absolute;
+  font-size: 200%;
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#favFoodImage1, #favFoodImage2, #favFoodImage3 {
+  width: 100%;
+  height: 80vh;
+  border-radius: 20px;
+  border: 4px solid white;
+  padding: 10px;
+}
+
+.food {
+  background-image: linear-gradient(120deg, #f6d365 50%, #fda085 50%);
+}
+
+.food1 {
+  background-image: linear-gradient(120deg, #ff5858 50%, #f09819 50%);
+}
+
+.food2 {
+  background-image: linear-gradient(120deg, #4facfe 50%, #00f2fe 50%);
+}
+
+.food, .food1, .food2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="body">
+        <img src="https://cdn.ning.com/wp-content/uploads/2019/05/create-food-website.jpg" alt="image" id="titleImage">
+        <div id="titleName">
+            <h1>Some of My Fav <br> Foods</h1>
+        </div>
+    </div>
+    <div class="food">
+        <div> <h3 id="favFood1">PIZZA</h3> </div>
+        <div> <p id="foodDescription">Pizza comes in a very big variety of tastes depending on ingredients.on hteir own there taste Great...</p> </div>
+        <div> <img src="https://images.creativemarket.com/0.1.0/ps/6082888/1820/1214/m1/fpnw/wm1/un3hccflscqwz5yctttbdmaplnkc7tls4ydqqf9ick5dwcakigujzrwm2j8saw49-.jpg?1552905460&s=185526a2d3a8f86b8d10831b3eecb7a9" alt="pizza" id="favFoodImage1"> </div>
+    </div>
+    <div class="food1">
+        <div> <h3 id="favFood2">FRENCH FRIES</h3> </div>
+        <div> <p id="foodDescription2">Crispy Snack to enjoy while bored ... and tasty but not so healthy</p> </div>
+        <div><img src="https://imgs.search.brave.com/LmityrvicC5fLjDNz7k2-iUVrKJXIjMN96Ky0LQxjnU/rs:fit:1200:1048:1/g:ce/aHR0cHM6Ly9hNTcu/Zm94bmV3cy5jb20v/YTU3LmZveG5ld3Mu/Y29tL3N0YXRpYy5m/b3huZXdzLmNvbS9m/b3huZXdzLmNvbS9j/b250ZW50L3VwbG9h/ZHMvMjAxOC8xMi82/NDAvMzIwLzE4NjIv/MTA0OC9Gcmllc0lz/dG9jay5qcGc_dmU9/MSZ0bD0xP3ZlPTEm/dGw9MQ" alt="FRENCH FRIES" id="favFoodImage2"> </div>
+    </div>
+    <div class="food2">
+        <div> <h3 id="favFood3"> ICE CREAM</h3> </div>
+        <div> <p id="foodDescription3">Different flavours to have a feast on!...</p> </div>
+        <div> <img src="https://imgs.search.brave.com/c3sj_aUR3gCs0JfcnFcu9rHEF9jZkida9EcmIEQYipM/rs:fit:1200:1047:1/g:ce/aHR0cHM6Ly93d3cu/aHVuZ3J5Zm9yZXZl/ci5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjAvMTAvYTZl/NDRjYWYzMTdkNmM2/MTE5ODdmYzUwYzQ4/MmI1N2RfaW1hZ2Ut/MTIuanBlZw" alt="ice CREAM img" id="favFoodImage3"> </div>
+    </div>
+</body>
+</html>
