@@ -1,0 +1,102 @@
+<!--
+    This Page is one of Link Web pages mini - project
+    created by Shanker ...
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2961/2961248.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            font-family: poppins,sans-serif;
+            text-align: center;
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            font-weight: 800;
+        }
+        #heading {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        table,th,td {
+            padding: 1%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        table {
+            width: 40%;
+            margin: auto;
+        }
+        ul {
+            width: 10%;
+            margin: auto;
+        }
+        li {
+            padding-bottom: 2%;
+        }
+        #courses {
+            padding: 2%;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Tables and lists</h1>
+    <table id="table-1">
+        <tr>
+            <th>Roll no.</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th class="size">Department</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>xxxx</td>
+            <td>Computer</td>
+            <td>CS</td>
+        </tr>
+    </table>
+    <h2 id="courses">No. of Courses Available</h2>
+    <ul id="list-1">
+        <li>Computer Science</li>
+        <li>Electronics</li>
+        <li>Aeronautics</li>
+        <li>Mechanical</li>
+        <li>Artificial Intelligence</li>
+    </ul>
+</body>
+</html>
